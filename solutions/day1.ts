@@ -1,4 +1,5 @@
 const day1 = Bun.file('data/day1.csv')
+console.log('Day 1: __________________')
 const input = await day1.text()
 const lines = input.split('\n')
 const col1: string[] = []
@@ -17,7 +18,7 @@ const delta = col1.reduce((prev, cur, ix) => {
   return prev + Math.abs(parseInt(cur) - parseInt(col2[ix]))
 }, 0)
 
-console.log('Part 1: ', delta)
+console.log('\tPart 1: ', delta)
 
 const col1FrequencyTable = col1.reduce((prev, cur) => {
   const access = prev[cur]
@@ -43,4 +44,5 @@ const sum = Object.entries(col1FrequencyTable).reduce((prev, [key, value]) => {
   return col2aggregate[key] ? prev + value * col2aggregate[key] : prev
 }, 0)
 
-console.log('Part 2: ', sum)
+console.log('\tPart 2: ', sum)
+console.log('_________________________')

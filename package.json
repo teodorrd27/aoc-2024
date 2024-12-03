@@ -1,6 +1,9 @@
 {
   "name": "advent",
   "module": "index.ts",
+  "scripts": {
+    "answers": "bun run index.ts"
+  },
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"

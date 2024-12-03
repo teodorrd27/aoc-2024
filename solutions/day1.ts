@@ -1,4 +1,4 @@
-const day1 = Bun.file('./day1.csv')
+const day1 = Bun.file('data/day1.csv')
 const input = await day1.text()
 const lines = input.split('\n')
 const col1: string[] = []

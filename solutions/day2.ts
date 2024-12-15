@@ -54,3 +54,4 @@ const part2Safes = lines.reduce((prev, cur) => {
 }, 0)
 
 console.log('\tPart 2: ', part2Safes)
+console.log('_________________________')
